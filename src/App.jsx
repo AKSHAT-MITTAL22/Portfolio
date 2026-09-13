@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import SkipLink from "./components/layout/SkipLink";
 import SiteFooter from "./components/layout/SiteFooter";
 import SiteHeader from "./components/layout/SiteHeader";
@@ -30,6 +31,7 @@ export default function App() {
       </main>
 
       <SiteFooter />
+      <Analytics />
     </>
   );
 }
