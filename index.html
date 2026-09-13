@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Akshat Mittal is a Generative AI and Python Developer building scalable backend systems, AI automation pipelines, and LLM-powered APIs."
+    />
+    <title>Akshat Mittal | Generative AI & Python Developer</title>
+    <link rel="preload" as="image" href="/assets/hero-architecture.png" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("portfolio-theme");
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme;
+        } catch (error) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
